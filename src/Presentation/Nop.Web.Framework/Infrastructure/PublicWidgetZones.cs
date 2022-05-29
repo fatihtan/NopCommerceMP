@@ -168,6 +168,17 @@
         public static string ProductDetailsEssentialTop => "productdetails_essential_top";
         public static string ProductDetailsInsideOverviewButtonsAfter => "productdetails_inside_overview_buttons_after";
         public static string ProductDetailsInsideOverviewButtonsBefore => "productdetails_inside_overview_buttons_before";
+        
+        /// <summary>
+        /// Points to Above the Price Section
+        /// </summary>
+        public static string ProductDetailsPriceTop => "productdetails_price_top";
+
+        /// <summary>
+        /// Points to Below the Price Section
+        /// </summary>
+        public static string ProductDetailsPriceBottom => "productdetails_price_bottom";
+
         public static string ProductDetailsOverviewBottom => "productdetails_overview_bottom";
         public static string ProductDetailsOverviewTop => "productdetails_overview_top";
         public static string ProductDetailsTop => "productdetails_top";

@@ -109,9 +109,15 @@
                         }
                         <!--price & add to cart & estimate shipping-->
                         @{
+                            <!--    Customized Section    -->
+                            @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.ProductDetailsPriceTop, additionalData = Model })
+
                             var dataDictPrice = new ViewDataDictionary(ViewData);
                             dataDictPrice.TemplateInfo.HtmlFieldPrefix = $"price_{Model.Id}";
                             @await Html.PartialAsync("_ProductPrice", Model.ProductPrice, dataDictPrice)
+
+                            <!--    Customized Section    -->
+                            @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.ProductDetailsPriceBottom, additionalData = Model })
 
                             @await Html.PartialAsync("_ProductTierPrices", Model.TierPrices)
 

@@ -1,0 +1,11 @@
+﻿{
+  "Group": "Marketplace",
+  "FriendlyName": "Marketplace Widget",
+  "SystemName": "Nop.Plugin.Widgets.Marketplace",
+  "Version": "1.0",
+  "SupportedVersions": [ "4.50" ],
+  "Author": "Fatih Tan",
+  "DisplayOrder": 1,
+  "FileName": "Nop.Plugin.Widgets.Marketplace.dll",
+  "Description": "This plugin allows to integrate with marketplace plugin widget part"
+}

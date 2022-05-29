@@ -67,7 +67,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nop.Plugin.Shipping.EasyPos
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nop.Plugin.Widgets.What3words", "Plugins\Nop.Plugin.Widgets.What3words\Nop.Plugin.Widgets.What3words.csproj", "{CF2A6564-C31D-4A2A-B42A-6BCA38F25219}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nop.Plugin.Marketplace", "Plugins\Nop.Plugin.Marketplace\Nop.Plugin.Marketplace.csproj", "{EAFF6170-6C45-411D-A70F-68CB2DC4C9A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nop.Plugin.Marketplace", "Plugins\Nop.Plugin.Marketplace\Nop.Plugin.Marketplace.csproj", "{EAFF6170-6C45-411D-A70F-68CB2DC4C9A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nop.Plugin.Widgets.Marketplace", "Plugins\Nop.Plugin.Widgets.Marketplace\Nop.Plugin.Widgets.Marketplace.csproj", "{FBAC34BC-64F4-4225-8A5A-42D982759E11}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -403,6 +405,18 @@ Global
 		{EAFF6170-6C45-411D-A70F-68CB2DC4C9A7}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{EAFF6170-6C45-411D-A70F-68CB2DC4C9A7}.Release|x86.ActiveCfg = Release|Any CPU
 		{EAFF6170-6C45-411D-A70F-68CB2DC4C9A7}.Release|x86.Build.0 = Release|Any CPU
+		{FBAC34BC-64F4-4225-8A5A-42D982759E11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBAC34BC-64F4-4225-8A5A-42D982759E11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBAC34BC-64F4-4225-8A5A-42D982759E11}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{FBAC34BC-64F4-4225-8A5A-42D982759E11}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{FBAC34BC-64F4-4225-8A5A-42D982759E11}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FBAC34BC-64F4-4225-8A5A-42D982759E11}.Debug|x86.Build.0 = Debug|Any CPU
+		{FBAC34BC-64F4-4225-8A5A-42D982759E11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBAC34BC-64F4-4225-8A5A-42D982759E11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBAC34BC-64F4-4225-8A5A-42D982759E11}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{FBAC34BC-64F4-4225-8A5A-42D982759E11}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{FBAC34BC-64F4-4225-8A5A-42D982759E11}.Release|x86.ActiveCfg = Release|Any CPU
+		{FBAC34BC-64F4-4225-8A5A-42D982759E11}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -437,6 +451,7 @@ Global
 		{2EC32245-2E97-4276-958F-96FD6C769933} = {7881B112-7843-4542-B1F7-F99553FB9BB7}
 		{CF2A6564-C31D-4A2A-B42A-6BCA38F25219} = {7881B112-7843-4542-B1F7-F99553FB9BB7}
 		{EAFF6170-6C45-411D-A70F-68CB2DC4C9A7} = {7881B112-7843-4542-B1F7-F99553FB9BB7}
+		{FBAC34BC-64F4-4225-8A5A-42D982759E11} = {7881B112-7843-4542-B1F7-F99553FB9BB7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EE72A8B2-332A-4175-9319-6726D36E9D25}

@@ -1,11 +1,11 @@
 ﻿{
   "Group": "Marketplace",
-  "FriendlyName": "Marketplace",
+  "FriendlyName": "Marketplace Old Version",
   "SystemName": "Marketplace",
   "Version": "1.0",
   "SupportedVersions": [ "4.50" ],
   "Author": "Fatih Tan",
   "DisplayOrder": 1,
   "FileName": "Nop.Plugin.Marketplace.dll",
-  "Description": "This plugin allows to integrate with marketplace services"
+  "Description": "This plugin allows to integrate with marketplace services (Old Version)"
 }
