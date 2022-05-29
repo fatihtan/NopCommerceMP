@@ -134,6 +134,7 @@ namespace Nop.Web.Framework.Infrastructure
             services.AddScoped<IAddressService, AddressService>();
             services.AddScoped<IAffiliateService, AffiliateService>();
             services.AddScoped<IVendorService, VendorService>();
+            services.AddScoped<IProductVendorService, ProductVendorService>();
             services.AddScoped<IVendorAttributeFormatter, VendorAttributeFormatter>();
             services.AddScoped<IVendorAttributeParser, VendorAttributeParser>();
             services.AddScoped<IVendorAttributeService, VendorAttributeService>();

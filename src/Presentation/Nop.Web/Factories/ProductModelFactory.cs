@@ -70,6 +70,7 @@ namespace Nop.Web.Factories
         private readonly ITaxService _taxService;
         private readonly IUrlRecordService _urlRecordService;
         private readonly IVendorService _vendorService;
+        private readonly IProductVendorService _productVendorService;
         private readonly IWebHelper _webHelper;
         private readonly IWorkContext _workContext;
         private readonly MediaSettings _mediaSettings;
@@ -101,6 +102,7 @@ namespace Nop.Web.Factories
             IProductAttributeParser productAttributeParser,
             IProductAttributeService productAttributeService,
             IProductService productService,
+            IProductVendorService productVendorService,
             IProductTagService productTagService,
             IProductTemplateService productTemplateService,
             IReviewTypeService reviewTypeService,
@@ -155,7 +157,7 @@ namespace Nop.Web.Factories
             _seoSettings = seoSettings;
             _shippingSettings = shippingSettings;
             _vendorSettings = vendorSettings;
-            
+            _productVendorService = productVendorService;
         }
 
         #endregion
@@ -1418,6 +1420,8 @@ namespace Nop.Web.Factories
             if (_vendorSettings.ShowVendorOnProductDetailsPage)
             {
                 var vendor = await _vendorService.GetVendorByIdAsync(product.VendorId);
+                var vendorList = await _productVendorService.GetVendorsByProductIdAsync(product.VendorId);
+
                 if (vendor != null && !vendor.Deleted && vendor.Active)
                 {
                     model.ShowVendor = true;
