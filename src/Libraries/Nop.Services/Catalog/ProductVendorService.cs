@@ -26,21 +26,15 @@ namespace Nop.Services.Catalog
             this._workContext = workContext;
         }
 
-        public Task<IList<Vendor>> GetVendorsByProductIdAsync(int productId)
+        public async Task<IList<Vendor>> GetVendorsByProductIdAsync(int productId)
         {
-            throw new NotImplementedException();
+            var productVendors = await this._productVendorRepository.Table.Where(pv => pv.ProductId == productId && pv.IsActive && !pv.Deleted).ToListAsync();
+
+            var vendorList = (from pv in productVendors
+                             join v in _vendorRepository.Table on pv.ProductId equals v.Id
+                             select v).ToList();
+
+            return vendorList;
         }
-
-        //public async Task<IList<Vendor>> GetVendorsByProductIdAsync(int productId)
-        //{
-        //    var productVendors = this._productVendorRepository.Table.Where(pv => pv.ProductId == productId && pv.IsActive && !pv.Deleted).ToListAsync();
-
-        //    var vendorList = from pv in productVendors.Result
-        //                     join v in _vendorRepository.Table on pv.ProductId equals v.Id
-        //                     select v;
-
-        //    return await vendorList;
-
-        //}
     }
 }

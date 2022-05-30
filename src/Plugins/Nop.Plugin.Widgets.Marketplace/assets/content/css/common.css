@@ -1,0 +1,61 @@
+﻿.product-vendors {
+  display: flex;
+  padding: 5px;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+  .product-vendors .vendor {
+    flex: 0 0 40%;
+    max-width: 40%;
+    width: 100%;
+  }
+
+    .product-vendors .vendor .vendor-name {
+      font-weight: bold;
+      color: royalblue;
+      font-size: 17px;
+    }
+
+  .product-vendors .price {
+    flex: 0 0 30%;
+    max-width: 30%;
+    width: 100%;
+  }
+
+    .product-vendors .price .old-price {
+      font-weight: 400;
+      color: #9e9e9e;
+      text-decoration: line-through;
+      padding-left: 10px;
+      height: 16px;
+      line-height: 16px;
+      text-align: left;
+    }
+
+    .product-vendors .price .current-price {
+      font-size: 18px;
+      color: #484848;
+      font-weight: 700;
+    }
+
+  .product-vendors .add-to-cart {
+    flex: 0 0 30%;
+    max-width: 30%;
+    width: 100%;
+  }
+
+    .product-vendors .add-to-cart .btn-add-to-cart {
+      transition-property: background-color,border-color;
+      background-color: #4ab2f1;
+      white-space: nowrap;
+      color: #fff;
+      border: 0;
+      border-radius: 5px;
+      padding: 10px 16px;
+      outline: 0;
+      cursor: pointer;
+      line-height: 1;
+      display: inline-block;
+    }

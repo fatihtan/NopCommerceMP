@@ -7,7 +7,7 @@ using Nop.Web.Framework.Models;
 
 namespace Nop.Plugin.Widgets.Marketplace.Models
 {
-    public class MarketplaceButtonModel
+    public class MarketplaceButtonViewModel
     {
         public bool IsEnabled { get; set; }
 

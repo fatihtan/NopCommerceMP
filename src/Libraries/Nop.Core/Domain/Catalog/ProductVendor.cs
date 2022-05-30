@@ -11,6 +11,8 @@ namespace Nop.Core.Domain.Catalog
     /// <summary>
     /// Represents a product vendor mapping
     /// </summary>
+    /// 
+    [Obsolete("This is an old version of marketplace plugin")]
     public class ProductVendor : BaseEntity, ISoftDeletedEntity
     {
         /// <summary>

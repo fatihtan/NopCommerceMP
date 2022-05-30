@@ -1420,7 +1420,7 @@ namespace Nop.Web.Factories
             if (_vendorSettings.ShowVendorOnProductDetailsPage)
             {
                 var vendor = await _vendorService.GetVendorByIdAsync(product.VendorId);
-                var vendorList = await _productVendorService.GetVendorsByProductIdAsync(product.VendorId);
+                //var vendorList = await _productVendorService.GetVendorsByProductIdAsync(product.VendorId);
 
                 if (vendor != null && !vendor.Deleted && vendor.Active)
                 {

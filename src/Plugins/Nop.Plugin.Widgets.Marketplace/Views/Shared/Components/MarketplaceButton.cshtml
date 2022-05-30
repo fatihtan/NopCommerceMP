@@ -1,6 +1,8 @@
-﻿@model Nop.Plugin.Widgets.Marketplace.Models.MarketplaceButtonModel
+﻿@model Nop.Plugin.Widgets.Marketplace.Models.MarketplaceButtonViewModel
 
 @if (Model.IsEnabled)
 {
-    <a href="#vendors">Diğer Satıcılar (@Model.NumberOfVendors)</a>
+    <div style="margin:20px 0px;">
+        <a href="#product-vendors" style="font-size:17px;">Diğer Satıcılar (@Model.NumberOfVendors)</a>
+    </div>
 }
