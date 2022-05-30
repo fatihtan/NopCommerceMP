@@ -1,0 +1,11 @@
+﻿{
+  "Group": "Payment methods",
+  "FriendlyName": "Iyzico",
+  "SystemName": "Nop.Plugin.Payments.Iyzico",
+  "Version": "1.0",
+  "SupportedVersions": [ "4.50" ],
+  "Author": "Fatih Tan",
+  "DisplayOrder": 1,
+  "FileName": "Nop.Plugin.Payments.Iyzico.dll",
+  "Description": "This plugin enables credit card payment via Iyzico"
+}
